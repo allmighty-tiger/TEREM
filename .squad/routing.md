@@ -147,7 +147,7 @@ How to decide who handles pentest work.
 
 1. **Vasilisa Phase 0 COMPLETE** — Both Output Sinks AND Logic Sinks inventoried
    - *Check:* `.squad/agents/vasilisa/history.md` contains entry "## Phase 0 Complete" with timestamp
-   - *Failure mode:* Discovery agents spawn without knowing auth entry points or authorization gates → repeat critical auth-bypass misses
+   - *Failure mode:* Discovery agents spawn without knowing auth entry points or authorization gates → risk overlooking critical auth-bypass paths
    
 2. **Output Context Matrix provided** — All endpoints mapped to their output sinks
    - *Check:* Vasilisa's Phase 0 report lists endpoints and response sinks
@@ -155,7 +155,7 @@ How to decide who handles pentest work.
 
 3. **Query Parameter Inventory provided** — All query params classified by injection risk
    - *Check:* Vasilisa's Phase 0 report lists query params per endpoint, classified by HIGH/MEDIUM priority (sort, filter, search, path, pagination, etc.)
-   - *Failure mode:* Query parameter injection vectors (path traversal, SQLi, LDAP, SSTI, SSRF) missed during discovery
+   - *Failure mode:* Query parameter injection vectors (path traversal, SQLi, LDAP, SSTI, SSRF) are not covered during discovery
    - *Reference:* `.squad/skills/query-param-fuzzing/SKILL.md` for classification and test protocol
 
 4. **Auth/Authz Gate Inventory provided** — All authentication and authorization code paths identified
@@ -164,11 +164,11 @@ How to decide who handles pentest work.
 
 5. **Volk scope verified** — Assigned to: IDOR, mass assignment, SSRF, SQLi, RCE, query parameter injection, logic flaws (never JUST XSS)
    - *Check:* Coordinator confirms Volk's charter or spawn prompt includes IDOR and query parameter testing as priority
-   - *Failure mode:* IDOR vulnerabilities skipped (missed in previous run); query params not tested
+   - *Failure mode:* IDOR vulnerabilities or query parameters receive insufficient review
 
 6. **Yaga scope verified** — Assigned to: JWT, OAuth, session management, auth bypass, access control, privilege escalation (never email)
    - *Check:* Coordinator confirms Yaga's charter or spawn prompt assigns Auth & Identity (not other domains)
-   - *Failure mode:* Authentication/authorization review skipped, critical auth-bypass misses repeated
+   - *Failure mode:* Authentication/authorization review may be omitted, leaving auth-bypass paths unexamined
 
 7. **All 5 agents spawn together** (Volk, Yaga, Gorynych, Leshy, Koschei) — Never stagger spawn or omit agents
    - *Check:* Coordinator spawns all 5 as one batch in a single turn
@@ -176,7 +176,7 @@ How to decide who handles pentest work.
 
 **BLOCKING RULE:** If the coordinator detects that Vasilisa Phase 0 did not complete, the coordinator MUST refuse to spawn Volk/Yaga/Gorynych/Koschei. Report: `"⚠️ Phase 0 incomplete. Vasilisa must finish Output + Logic Sink inventory before discovery agents spawn."`
 
-**Violation consequence:** Repeat of current pentest: agents spawn without complete sink inventory → Auth & Identity, IDOR, and Authorization vulnerabilities remain undiscovered.
+**Violation consequence:** Starting discovery without a complete sink inventory can leave Auth & Identity, IDOR, and Authorization paths unexamined.
 
 ## Escalation & Disputes
 
