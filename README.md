@@ -25,11 +25,13 @@ Its mysterious fairy-tale identities are light presentation elements only. They 
 | Yaga | Reviews authentication, authorization, sessions, and identity boundaries. |
 | Gorynych | Reviews infrastructure, cloud, containers, proxies, and CI/CD. |
 | Leshy | Maps the codebase, dependencies, and hidden connections. |
-| Koschei | Investigates root causes and multi-step attack chains. |
+| Koschei | Investigates root causes and connects triaged candidates across agents into multi-step attack chains, with source evidence for each hop. |
 | Mirror | Independently validates evidence through the Five-Gates workflow. |
 | Kot | Preserves decisions, coverage, handoffs, and session records. |
 
 The normal handoff order is Phase 0 inventory, parallel discovery, Vasilisa triage, Koschei chain analysis, Mirror validation, final report assembly, and Kot documentation. Only evidence that passes validation is eligible for the final findings report.
+
+**Attack-chain analysis:** After triage, Koschei examines how candidates from different agents can combine into a multi-step attack path. It traces the data flow and state transitions between hops in source code, checks for controls that break the chain, and documents the resulting impact and manual verification steps. Mirror then independently validates both standalone candidates and complete chains through the Five-Gates workflow. This is static, source-based analysis; runtime verification is performed manually by the user. See [Koschei's charter](.squad/agents/koschei/charter.md) and [Mirror's chain-validation rules](.squad/agents/mirror/charter.md#chain-specific-gate-rules).
 
 **Key difference from traditional testing:**
 - **Class-first approach** (traditional): Find all XSS vulnerabilities, then all SQLi, then all IDOR... *Risk:* Vulnerabilities missed because focus shifts between classes
@@ -136,7 +138,7 @@ Before starting, confirm that the source code is in `codebase/` and that every a
 The squad will:
 1. **Inventory all output sinks** (Phase 0: Vasilisa's ceremony)
 2. **Parallel discovery** (Volk, Yaga, Gorynych, Leshy, Koschei all working simultaneously)
-3. **Cross-reference analysis** (Koschei validates attack chains)
+3. **Attack-chain analysis** (after Vasilisa triage, Koschei builds candidate chains and checks each hop against source code)
 4. **Five-Gates validation** (Mirror approves findings)
 5. **Final report** (findings + manual PoC steps in `/reports/{date}/`)
 
