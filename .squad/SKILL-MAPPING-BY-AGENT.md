@@ -1,6 +1,10 @@
 # TEREM — Skill Mapping by Agent
 
-## Complete Team Skill Coverage (51 Active Skill Files)
+## Configured Local Skill Set (51 Active Skill Files)
+
+The entries below map agents to the checklist files expected in the local workspace. Checklist contents under `.squad/skills/` and `.squad/skills-archive-binary/` are excluded from this repository. Supply the required active `SKILL.md` files separately before running the full workflow. Archived checklists are outside the active white-box workflow. See [local checklist setup](../README.md#local-checklist-files).
+
+Some local checklists are derived from [SnailSploit/offensive-checklist](https://github.com/SnailSploit/offensive-checklist). The [Third-Party Notices](../THIRD_PARTY_NOTICES.md#snailsploitoffensive-checklist) identify the corresponding local paths, original source links, and unresolved redistribution status. Source links provide attribution and do not themselves grant permission to copy, adapt, or redistribute checklist text.
 
 ---
 
@@ -97,7 +101,7 @@
 
 ## ✅ Mirror — Validator / Verifier (1 Skill)
 
-**Skills Loaded:**
+**Required local skills:**
 1. `five-gates-validation` — Five-Gates Framework (source verification, attack flow, severity calibration, false positive review, reproducibility)
 
 **Custom verification logic:**
@@ -113,7 +117,7 @@
 
 ## 🏗️ Vasilisa — Pentest Lead & Orchestrator (2 Skills)
 
-**Skills Loaded:**
+**Required local skills:**
 1. `sink-inventory` — Phase 0 Output Sink Enumeration (routes, sinks, encoding, context matrix)
 2. `discovery-spawn-completeness` — Spawn Completeness Checks (verify all 7 gates before agent spawn)
 
@@ -130,7 +134,7 @@
 
 ## 📋 Kot — Session Memory & Documentation (2 Skills)
 
-**Skills Loaded:**
+**Required local skills:**
 1. `coverage-tracking` — Endpoint/sink/file/pattern coverage metrics and Coverage Report
 2. `project-conventions` — Project-Specific Conventions (OpenResty/nginx/Kubernetes patterns, anti-patterns)
 
@@ -172,6 +176,8 @@ The following skills are used by multiple agents:
 ---
 
 ## Changes Log
+
+This log describes changes to the local skill set. The referenced checklist contents are excluded from this repository.
 
 ### Skill Gap Closure
 
@@ -263,7 +269,7 @@ User: "Run a pentest"
 
 ## Getting Started
 
-Invoke TEREM with:
+After completing the [local checklist setup](../README.md#local-checklist-files), invoke TEREM with:
 
 ```
 "Vasilisa, run a comprehensive pentest on [target-codebase]"
