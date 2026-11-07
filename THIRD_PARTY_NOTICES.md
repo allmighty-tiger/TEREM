@@ -1,10 +1,10 @@
 # Third-Party Notices
 
-TEREM contains project-specific configuration built on third-party frameworks and references local checklist materials from third-party sources. Checklist content is excluded from the current publication index. These notices preserve upstream attribution; they do not claim that TEREM created the upstream projects.
+TEREM contains project-specific configuration built on third-party frameworks and references separately obtained local checklists. Checklist content is excluded from this repository's tracked files; this does not remove content from earlier commits. These notices preserve upstream attribution; they do not claim that TEREM created the upstream projects.
 
 ## Squad
 
-- Upstream project: [bradygaster/squad](https://github.com/bradygaster/squad)
+- Upstream project: [GitHub Squad](https://github.com/github/squad)
 - License: MIT
 - Copyright: `Copyright (c) 2026 Brady Gaster and contributors`
 - Preserved license text: [`LICENSES/SQUAD-MIT.txt`](LICENSES/SQUAD-MIT.txt)
@@ -14,15 +14,17 @@ The MIT notice applies to incorporated or adapted Squad framework materials. Fra
 ## SnailSploit/offensive-checklist
 
 - Upstream project: [SnailSploit/offensive-checklist](https://github.com/SnailSploit/offensive-checklist)
-- Content referenced: local security checklists corresponding to the paths listed below; the current publication snapshot does not distribute their text
-- Attribution: each skill retains its direct upstream `Source` URL
-- Licensing status: **unresolved for redistribution of checklist text**; no checklist text is included in the current publication index
+- Content referenced: separately obtained local security checklists; the listed paths are local placement references, not downloadable files included in TEREM
+- Attribution: the inventory below preserves direct upstream source links
+- Licensing status: **unresolved for redistribution of checklist text**; checklist contents are excluded from this repository's tracked files
 
 As verified on 2026-11-06, the upstream repository root exposes no `LICENSE` file and its `README.md` contains no license grant. A public repository and source attribution alone do not supply a redistribution license. Anyone who separately obtains and redistributes copied or adapted text still requires an applicable license or explicit permission from the rightsholder. Do not remove the source references or rewrite the material merely to obscure its origin.
 
+Keeping material local does not itself grant permission to copy or adapt it.
+
 ### Active skills
 
-| TEREM skill | Upstream source |
+| Local checklist path | Upstream source |
 |---|---|
 | `.squad/skills/offensive-ai-security/SKILL.md` | [`ai.md`](https://github.com/SnailSploit/offensive-checklist/blob/main/ai.md) |
 | `.squad/skills/offensive-deserialization/SKILL.md` | [`insecure-deserialization.md`](https://github.com/SnailSploit/offensive-checklist/blob/main/insecure-deserialization.md) |
@@ -43,7 +45,7 @@ As verified on 2026-11-06, the upstream repository root exposes no `LICENSE` fil
 
 ### Archived binary-oriented skills
 
-| TEREM archived skill | Upstream source |
+| Archived local checklist path | Upstream source |
 |---|---|
 | `.squad/skills-archive-binary/offensive-advanced-redteam/SKILL.md` | [`Advanced red-team operations for dummies.md`](https://github.com/SnailSploit/offensive-checklist/blob/main/Advanced%20red-team%20operations%20for%20dummies.md) |
 | `.squad/skills-archive-binary/offensive-basic-exploitation/SKILL.md` | [`5-basic-exploitation.md`](https://github.com/SnailSploit/offensive-checklist/blob/main/5-basic-exploitation.md) |
@@ -61,4 +63,4 @@ As verified on 2026-11-06, the upstream repository root exposes no `LICENSE` fil
 | `.squad/skills-archive-binary/offensive-windows-boundaries/SKILL.md` | [`7-windows-boundaries.md`](https://github.com/SnailSploit/offensive-checklist/blob/main/7-windows-boundaries.md) |
 | `.squad/skills-archive-binary/offensive-windows-mitigations/SKILL.md` | [`6-windows-mitigations.md`](https://github.com/SnailSploit/offensive-checklist/blob/main/6-windows-mitigations.md) |
 
-Inventory total: 31 referenced local skill paths (16 active and 15 archived). Their contents are not part of the current publication index.
+Inventory total: 31 separately obtained local checklist paths (16 active and 15 archived). Their contents are excluded from this repository's tracked files.

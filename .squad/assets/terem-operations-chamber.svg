@@ -1,28 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
-  <title id="title">TEREM operations chamber</title>
-  <desc id="desc">A mysterious professional security operations chamber with eight named agent emblems surrounding the TEREM lantern.</desc>
-  <defs>
-    <radialGradient id="glow"><stop stop-color="#d9bb6d" stop-opacity=".75"/><stop offset="1" stop-color="#121827" stop-opacity="0"/></radialGradient>
-    <linearGradient id="wall" x2="0" y2="1"><stop stop-color="#121827"/><stop offset="1" stop-color="#0a0f19"/></linearGradient>
-    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000" flood-opacity=".45"/></filter>
-  </defs>
-  <rect width="1200" height="720" fill="url(#wall)"/>
-  <circle cx="600" cy="330" r="280" fill="url(#glow)"/>
-  <path d="M510 520V245l90-88 90 88v275Z" fill="#182238" stroke="#b89b55" stroke-width="5" filter="url(#shadow)"/>
-  <path d="M555 520V310h90v210" fill="#0d1422" stroke="#6f7f9b" stroke-width="4"/>
-  <path d="M545 245h110l-55-55Z" fill="#263653" stroke="#b89b55" stroke-width="4"/>
-  <rect x="570" y="275" width="60" height="82" rx="8" fill="#e2c873" stroke="#fff0b6" stroke-width="4"/>
-  <path d="M584 275h32l-7-20h-18Z" fill="#8e633d"/>
-  <text x="600" y="410" text-anchor="middle" fill="#f3e6b2" font-family="Georgia,serif" font-size="48" letter-spacing="9">TEREM</text>
-  <text x="600" y="448" text-anchor="middle" fill="#aebbd1" font-family="sans-serif" font-size="20" letter-spacing="3">WHITE-BOX SECURITY AGENT TEAM</text>
-  <g font-family="sans-serif" text-anchor="middle" filter="url(#shadow)">
-    <g transform="translate(80 90)"><rect width="250" height="110" rx="18" fill="#1a263d" stroke="#d4b663" stroke-width="3"/><path d="M52 24 60 48 84 56 60 64 52 88 44 64 20 56 44 48Z" fill="#d4b663"/><text x="165" y="48" fill="#f3e6b2" font-size="24">VASILISA</text><text x="165" y="76" fill="#aebbd1" font-size="14">LEAD &amp; ORCHESTRATOR</text></g>
-    <g transform="translate(870 90)"><rect width="250" height="110" rx="18" fill="#1a263d" stroke="#8ea4c7" stroke-width="3"/><path d="M20 28 39 40 52 35 65 40 84 28 77 67 52 87 27 67Z" fill="#8ea4c7"/><text x="165" y="48" fill="#e7eef9" font-size="24">VOLK</text><text x="165" y="76" fill="#aebbd1" font-size="14">WEB APPLICATION</text></g>
-    <g transform="translate(35 250)"><rect width="250" height="110" rx="18" fill="#241f34" stroke="#b998c6" stroke-width="3"/><path d="M23 86V48c0-22 13-32 29-32s29 10 29 32v38Z" fill="#b998c6"/><circle cx="52" cy="52" r="9" fill="#241f34"/><text x="165" y="48" fill="#eee4f2" font-size="24">YAGA</text><text x="165" y="76" fill="#bfb0c8" font-size="14">IDENTITY &amp; ACCESS</text></g>
-    <g transform="translate(915 250)"><rect width="250" height="110" rx="18" fill="#183224" stroke="#90d0a2" stroke-width="3"/><g fill="#90d0a2"><circle cx="31" cy="43" r="17"/><circle cx="52" cy="29" r="17"/><circle cx="73" cy="43" r="17"/></g><path d="M31 60 52 82 73 60" fill="none" stroke="#90d0a2" stroke-width="6"/><text x="165" y="48" fill="#def3e4" font-size="23">GORYNYCH</text><text x="165" y="76" fill="#a8c9b1" font-size="14">INFRASTRUCTURE &amp; CLOUD</text></g>
-    <g transform="translate(80 410)"><rect width="250" height="110" rx="18" fill="#183224" stroke="#8fc49a" stroke-width="3"/><path d="M52 90V48M52 59 29 38M52 65 77 39" stroke="#8fc49a" stroke-width="6"/><g fill="#8fc49a"><circle cx="52" cy="29" r="17"/><circle cx="26" cy="38" r="13"/><circle cx="80" cy="38" r="14"/></g><text x="165" y="48" fill="#e1f1e4" font-size="24">LESHY</text><text x="165" y="76" fill="#a8c9b1" font-size="14">CODEBASE RECON</text></g>
-    <g transform="translate(870 410)"><rect width="250" height="110" rx="18" fill="#211d38" stroke="#8f82c9" stroke-width="3"/><circle cx="47" cy="52" r="30" fill="none" stroke="#b7aee5" stroke-width="5"/><circle cx="47" cy="52" r="14" fill="none" stroke="#8f82c9" stroke-width="4"/><path d="M65 70 86 91M74 79l8-8" stroke="#d7b96e" stroke-width="6"/><text x="165" y="48" fill="#eeeaff" font-size="24">KOSCHEI</text><text x="165" y="76" fill="#b9b0df" font-size="14">ATTACK-CHAIN ANALYSIS</text></g>
-    <g transform="translate(185 570)"><rect width="250" height="110" rx="18" fill="#1b293b" stroke="#c5d2e3" stroke-width="3"/><ellipse cx="52" cy="48" rx="31" ry="36" fill="#7991aa" stroke="#d8e2ec" stroke-width="4"/><path d="M38 48 48 58 67 36" fill="none" stroke="#fff" stroke-width="6"/><text x="165" y="48" fill="#edf4fa" font-size="24">MIRROR</text><text x="165" y="76" fill="#b8c7d5" font-size="14">VALIDATOR / VERIFIER</text></g>
-    <g transform="translate(765 570)"><rect width="250" height="110" rx="18" fill="#30283a" stroke="#c0a9c8" stroke-width="3"/><path d="M22 30 36 17 45 31h14l9-14 14 13-5 44H27Z" fill="#c0a9c8"/><path d="M15 75q18-8 37 4 18-12 37-4v25q-19-8-37 3-19-11-37-3Z" fill="#efe5c6" stroke="#b59555" stroke-width="3"/><text x="165" y="48" fill="#f1e8f4" font-size="24">KOT</text><text x="165" y="76" fill="#c6b8cc" font-size="14">MEMORY &amp; DOCUMENTATION</text></g>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+<title id="title">TEREM — a fairy-tale security team</title>
+<desc id="desc">Eight cheerful fairy-tale companions gather around a carved wooden terem in a twilight forest: Vasilisa with a guiding star, Volk the wolf, Yaga with a key, three-headed Gorynych, leafy Leshy, Koschei with a secret egg, a smiling Mirror, and learned Kot with a book. Warm windows, mushrooms and fireflies light their meeting.</desc>
+<defs>
+<linearGradient id="sky" x2="0" y2="1"><stop stop-color="#163a52"/><stop offset="1" stop-color="#3e796b"/></linearGradient>
+<linearGradient id="glass" x2="1" y2="1"><stop stop-color="#e3faf0"/><stop offset="1" stop-color="#85bbcd"/></linearGradient>
+<radialGradient id="glow"><stop stop-color="#ffd68a" stop-opacity=".45"/><stop offset="1" stop-color="#ffd68a" stop-opacity="0"/></radialGradient>
+<pattern id="logs" width="240" height="25" patternUnits="userSpaceOnUse"><rect width="240" height="25" fill="#b9714b"/><path d="M0 23h240" stroke="#89503c" stroke-width="3"/><path d="M10 8q38-7 75 0m30 3q40-8 95 0" fill="none" stroke="#d98d5a" stroke-width="2"/></pattern>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#122e39" flood-opacity=".25"/></filter>
+<g id="star"><path d="M0-7 2-2 7 0 2 2 0 7-2 2-7 0-2-2Z" fill="#ffe6a3"/></g>
+<g id="eyes" fill="#2e414b"><circle cx="-12" r="3"/><circle cx="12" r="3"/></g>
+<g id="dragon"><path d="m-20 0-3-24 17 9q8-8 15 0l17-9-4 24" fill="#78bc88"/><ellipse cy="3" rx="25" ry="22" fill="#88c997"/><use href="#eyes" y="-3"/><path d="M-10 8q10 10 20 0" class="smile"/><path d="m-7 13 4 7 4-5" fill="#fff1c9"/></g>
+<g id="pine"><path d="M0-100-42-35h23L-59 19h29l-42 56H72L30 19h29L19-35h23Z" fill="#1a454a"/></g>
+<g id="mushroom"><path d="M-5 0-8 25h16L5 0" fill="#ffe7bd"/><path d="M-25 2Q-20-30 0-27 20-30 25 2Z" fill="#ea806c"/><g fill="#ffe7bd"><circle cx="-11" cy="-6" r="4"/><circle cx="6" cy="-16" r="4"/><circle cx="16" cy="-4" r="3"/></g></g>
+<style>.smile{fill:none;stroke:#785c59;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}</style>
+</defs>
+<rect width="1200" height="800" rx="28" fill="url(#sky)"/>
+<circle cx="600" cy="340" r="310" fill="url(#glow)"/>
+<circle cx="911" cy="65" r="28" fill="#ffe5a5"/><circle cx="925" cy="55" r="25" fill="#1c4356"/>
+<g opacity=".6"><use href="#pine" transform="translate(35 420) scale(1.6)"/><use href="#pine" transform="translate(1160 450) scale(1.8)"/><use href="#pine" transform="translate(358 300) scale(.8)"/><use href="#pine" transform="translate(842 300) scale(.8)"/></g>
+<path d="M0 685Q200 618 390 672t390-10 420-7v145H0Z" fill="#29574f"/>
+<path d="M0 762q220-74 425-9t400-9 375-8v64H0Z" fill="#234c48"/>
+<g fill="#ffe0a0"><circle cx="112" cy="63" r="2"/><circle cx="750" cy="80" r="3"/><circle cx="470" cy="93" r="2"/><circle cx="1100" cy="62" r="2"/><circle cx="400" cy="490" r="3"/><circle cx="801" cy="482" r="3"/></g>
+<use href="#star" x="334" y="90"/><use href="#star" x="829" y="81"/><use href="#star" x="84" y="522"/><use href="#star" x="1110" y="535"/>
+<g filter="url(#shadow)" stroke-linejoin="round">
+<path d="M470 510 486 247h228l16 263Z" fill="url(#logs)" stroke="#e7ad72" stroke-width="6"/>
+<path d="M450 276 600 99 750 276l-40-13L600 153 490 263Z" fill="#c75b61" stroke="#ffcd89" stroke-width="7"/>
+<path d="M500 222 600 122 700 222m-222 33L600 145l122 110" fill="none" stroke="#ef9b76" stroke-width="3"/>
+<path d="m600 101-8-31 17 6-9 25" fill="#f9d38f"/>
+<path d="M687 183v-67h25v95" fill="#ac674d" stroke="#edb47b" stroke-width="4"/>
+<path d="M699 102q-18-18 1-31t-1-27" fill="none" stroke="#d5e1d3" stroke-width="10" stroke-linecap="round" opacity=".6"/>
+<circle cx="600" cy="220" r="28" fill="#ffe2a1" stroke="#794940" stroke-width="7"/>
+<path d="M600 195v50m-25-25h50" stroke="#ad714f" stroke-width="5"/>
+<rect x="493" y="284" width="214" height="70" rx="13" fill="#2b5053" stroke="#ffda93" stroke-width="5"/>
+<text x="600" y="334" text-anchor="middle" fill="#ffeac0" font-family="Georgia,serif" font-weight="bold" font-size="43" letter-spacing="6">TEREM</text>
+<g fill="#ffda89" stroke="#f7c589" stroke-width="5"><path d="M497 389q23-26 46 0v69h-46Z"/><path d="M657 389q23-26 46 0v69h-46Z"/></g>
+<path d="M520 381v77m-23-34h46m137-43v77m-23-34h46" stroke="#995b42" stroke-width="5"/>
+<path d="M561 510v-98q39-47 78 0v98" fill="#69443d" stroke="#e4af71" stroke-width="6"/>
+<path d="M576 503v-87q24-29 48 0v87" fill="#dfab68"/><circle cx="613" cy="462" r="4" fill="#69443d"/>
+<path d="M540 513h120l18 16H522Zm-18 16h156l18 17H504Z" fill="#dbaa75" stroke="#835743" stroke-width="3"/>
+</g>
+<text x="600" y="43" text-anchor="middle" fill="#ffedbd" font-family="Georgia,serif" font-style="italic" font-size="22">A little magic. A lot of evidence.</text>
+<text x="600" y="576" text-anchor="middle" fill="#e1edcf" font-family="sans-serif" font-size="13" letter-spacing="2">WHITE-BOX SECURITY AGENT TEAM</text>
+<g stroke-linejoin="round" stroke-linecap="round" font-family="sans-serif" text-anchor="middle">
+<g transform="translate(180 180)"><circle r="74" fill="#f4cf87" stroke="#f8e6bd" stroke-width="5" filter="url(#shadow)"/><path d="M-50 60Q-45 15 0 15T50 60" fill="#bf5268"/><path d="M-34 18V-28Q0-75 34-28V18" fill="#674747"/><ellipse cy="-4" rx="27" ry="33" fill="#f4be91"/><path d="m-35-25 9-30 26 10 26-10 9 30Z" fill="#3b8a87" stroke="#ffe7a2" stroke-width="4"/><use href="#eyes" y="-5"/><path d="M-10 10q10 9 20 0" class="smile"/><use href="#star" y="-39"/><path d="m-14 40 14 14 14-14" fill="none" stroke="#ffdc94" stroke-width="5"/><text y="103" fill="#ffedbd" font-size="21" font-weight="bold" letter-spacing="2">VASILISA</text><text y="124" fill="#d5e8d9" font-size="11">LEAD &amp; ORCHESTRATOR</text></g>
+<g transform="translate(1020 180)"><circle r="74" fill="#accfd3" stroke="#f8e6bd" stroke-width="5" filter="url(#shadow)"/><path d="M-43 43-47-57-17-34q17-7 34 0l30-23-4 100Z" fill="#75869a"/><path d="m-38-41 18 15-18 10m76-25-18 15 18 10" fill="#e8b3a7"/><path d="m-39 9 20 0 19 16 19-16h20L22 48h-44Z" fill="#f5e4c8"/><use href="#eyes" y="-5"/><path d="m-9 21 9 10 9-10Z" fill="#2b4050"/><path d="M0 31q-10 13-22 4m22-4q10 13 22 4" class="smile"/><path d="m-31 54 31 12 31-12" stroke="#dc8069" stroke-width="10" fill="none"/><text y="103" fill="#ffedbd" font-size="21" font-weight="bold" letter-spacing="2">VOLK</text><text y="124" fill="#d5e8d9" font-size="11">WEB APPLICATION</text></g>
+<g transform="translate(170 410)"><circle r="74" fill="#d4b4d1" stroke="#f8e6bd" stroke-width="5" filter="url(#shadow)"/><path d="M-50 62Q-55-65 0-55 55-65 50 62Z" fill="#7c608f"/><ellipse cy="-2" rx="30" ry="36" fill="#edbd93"/><path d="m-31-5 4-32 21 5-17 22m28-22 21-5 5 32-14-5" fill="#e8e0cb"/><use href="#eyes" y="-4"/><path d="m-1 0-8 13H8m-18 10q10 7 21-3" class="smile"/><path d="m-21-13 12-5m18 0 12 5" class="smile"/><g transform="translate(37 40) rotate(20)" fill="none" stroke="#ffe19b" stroke-width="6"><circle cy="-9" r="10"/><path d="M0 2v28h11m-11-9h9"/></g><text y="103" fill="#ffedbd" font-size="21" font-weight="bold" letter-spacing="2">YAGA</text><text y="124" fill="#d5e8d9" font-size="11">IDENTITY &amp; ACCESS</text></g>
+<g transform="translate(1030 410)"><circle r="74" fill="#e8ce8e" stroke="#f8e6bd" stroke-width="5" filter="url(#shadow)"/><path d="M-28 61q-24-20-14-65M0 61V-32m28 93q24-20 14-65" fill="none" stroke="#4e986d" stroke-width="22"/><use href="#dragon" x="-43" y="-7"/><use href="#dragon" y="-34"/><use href="#dragon" x="43" y="-7"/><path d="M-22 49q22 13 44 0" fill="none" stroke="#bbd796" stroke-width="8"/><text y="103" fill="#ffedbd" font-size="21" font-weight="bold" letter-spacing="2">GORYNYCH</text><text y="124" fill="#d5e8d9" font-size="11">INFRASTRUCTURE &amp; CLOUD</text></g>
+<g transform="translate(170 648)"><circle r="74" fill="#b5d19c" stroke="#f8e6bd" stroke-width="5" filter="url(#shadow)"/><path d="M-40 46q-26-31-4-58-6-31 25-34 20-25 39-1 33-4 28 31 25 28-7 62Z" fill="#408668"/><ellipse cy="-3" rx="29" ry="30" fill="#dfb982"/><use href="#eyes" y="-7"/><path d="M-30 8q3 36 30 50 27-14 30-50L14 23 0 16-14 23Z" fill="#408668"/><path d="M-9 8q9 7 18 0" class="smile"/><path d="M-21-31q-28-35-10-34 17 1 10 34m34-3q7-33 23-29 13 10-23 29" fill="#82ba84"/><text y="103" fill="#ffedbd" font-size="21" font-weight="bold" letter-spacing="2">LESHY</text><text y="124" fill="#d5e8d9" font-size="11">CODEBASE RECON</text></g>
+<g transform="translate(1030 648)"><circle r="74" fill="#bab8d2" stroke="#f8e6bd" stroke-width="5" filter="url(#shadow)"/><path d="M-46 59q5-45 46-45t46 45" fill="#655575"/><path d="M-27-20q0-26 27-26t27 26V0q0 22-15 25v12h-24V25Q-27 22-27 0Z" fill="#f6dfb6"/><path d="m-30-33-3-21 20 9L0-62l13 17 20-9-3 21Z" fill="#ddb064" stroke="#ffe4a1" stroke-width="3"/><g fill="none" stroke="#65516e" stroke-width="3"><circle cx="-12" cy="-8" r="9"/><circle cx="12" cy="-8" r="9"/><path d="M-3-8h6m-13 24q10 7 20 0"/></g><path d="M25 42q0-30 12-30t12 30q0 14-12 14T25 42" fill="#ffe6a0"/><use href="#star" x="37" y="36"/><text y="103" fill="#ffedbd" font-size="21" font-weight="bold" letter-spacing="2">KOSCHEI</text><text y="124" fill="#d5e8d9" font-size="11">ATTACK-CHAIN ANALYSIS</text></g>
+<g transform="translate(418 648)"><circle r="74" fill="#acccd0" stroke="#f8e6bd" stroke-width="5" filter="url(#shadow)"/><path d="M-16 53h32M0 38v15" stroke="#eec176" stroke-width="8"/><ellipse cy="-7" rx="36" ry="48" fill="url(#glass)" stroke="#f4c77c" stroke-width="7"/><path d="m-23-19 12-14m-12 31 26-29" fill="none" stroke="#fffae7" stroke-width="5"/><use href="#eyes" y="-3"/><path d="M-10 12q10 10 20 0" class="smile"/><text y="103" fill="#ffedbd" font-size="21" font-weight="bold" letter-spacing="2">MIRROR</text><text y="124" fill="#d5e8d9" font-size="11">VALIDATOR / VERIFIER</text></g>
+<g transform="translate(782 648)"><circle r="74" fill="#eac2a2" stroke="#f8e6bd" stroke-width="5" filter="url(#shadow)"/><path d="M-32 21-36-45-13-26q13-5 26 0l23-19-4 66Z" fill="#d99958"/><path d="m-29-34 12 13-12 5m58-18-12 13 12 5" fill="#eab3a2"/><g fill="none" stroke="#544b4a" stroke-width="3"><circle cx="-14" cy="-5" r="11"/><circle cx="14" cy="-5" r="11"/><path d="M-3-5h6"/></g><path d="m-5 8 5 6 5-6Z" fill="#654444"/><path d="m-20 10-22-3m22 11-22 3m62-11 22-3m-22 11 22 3" class="smile"/><path d="M-43 28q22-7 43 5 21-12 43-5v29q-22-7-43 4-21-11-43-4Z" fill="#fff1ce" stroke="#82715d" stroke-width="3"/><path d="M0 33v28m-30-19 18 4m24 0 18-4" stroke="#b39a75" stroke-width="2"/><text y="103" fill="#ffedbd" font-size="21" font-weight="bold" letter-spacing="2">KOT</text><text y="124" fill="#d5e8d9" font-size="11">MEMORY &amp; DOCUMENTATION</text></g>
+</g>
+<use href="#mushroom" transform="translate(580 717) scale(.8)"/><use href="#mushroom" transform="translate(614 733) scale(.55)"/><use href="#mushroom" transform="translate(1124 763) scale(.65)"/>
+<g fill="none" stroke="#7da681" stroke-width="3" stroke-linecap="round"><path d="M537 768q-15-24-9-31m9 31q3-24 18-31M41 762q-7-19-19-21m19 21q0-23 10-34M1161 689q-3-30 10-41"/></g>
 </svg>

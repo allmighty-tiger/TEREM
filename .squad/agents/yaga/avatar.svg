@@ -1,10 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
-  <title id="title">Yaga — Authentication and Identity Specialist</title>
-  <desc id="desc">A guarded arch with an eye and keyhole, representing identity challenges.</desc>
-  <rect width="128" height="128" rx="18" fill="#101522"/>
-  <path d="M30 94V55c0-27 15-39 34-39s34 12 34 39v39Z" fill="#2d2539" stroke="#b998c6" stroke-width="3"/>
-  <path d="M43 94V57c0-16 8-25 21-25s21 9 21 25v37Z" fill="#141b2b"/>
-  <path d="M45 56q19-18 38 0-19 18-38 0Z" fill="#d8c6e4"/><circle cx="64" cy="56" r="7" fill="#5d3b78"/>
-  <circle cx="64" cy="76" r="6" fill="#d7b96e"/><rect x="61" y="79" width="6" height="12" rx="2" fill="#d7b96e"/>
-  <text x="64" y="117" text-anchor="middle" fill="#eadff0" font-family="sans-serif" font-size="12" letter-spacing="2">YAGA</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="136" viewBox="0 0 180 192" role="img" aria-labelledby="title desc">
+  <title id="title">Yaga — TEREM</title>
+  <desc id="desc">A silver-haired guardian in a purple shawl holding a golden key.</desc>
+  <defs><linearGradient id="glass" x2="1" y2="1" xmlns="http://www.w3.org/2000/svg"><stop stop-color="#e3faf0" /><stop offset="1" stop-color="#85bbcd" /></linearGradient>
+<filter id="shadow" x="-20%" y="-20%" width="140%" height="150%" xmlns="http://www.w3.org/2000/svg"><feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#122e39" flood-opacity=".25" /></filter>
+<g id="star" xmlns="http://www.w3.org/2000/svg"><path d="M0-7 2-2 7 0 2 2 0 7-2 2-7 0-2-2Z" fill="#ffe6a3" /></g>
+<g id="eyes" fill="#2e414b" xmlns="http://www.w3.org/2000/svg"><circle cx="-12" r="3" /><circle cx="12" r="3" /></g>
+<g id="dragon" xmlns="http://www.w3.org/2000/svg"><path d="m-20 0-3-24 17 9q8-8 15 0l17-9-4 24" fill="#78bc88" /><ellipse cy="3" rx="25" ry="22" fill="#88c997" /><use href="#eyes" y="-3" /><path d="M-10 8q10 10 20 0" class="smile" /><path d="m-7 13 4 7 4-5" fill="#fff1c9" /></g>
+<style xmlns="http://www.w3.org/2000/svg">.smile{fill:none;stroke:#785c59;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}</style></defs>
+  <rect width="180" height="192" rx="22" fill="#214b50"/>
+  <g stroke-linejoin="round" stroke-linecap="round"><g transform="translate(90 84)" xmlns="http://www.w3.org/2000/svg"><circle r="74" fill="#d4b4d1" stroke="#f8e6bd" stroke-width="5" filter="url(#shadow)" /><path d="M-50 62Q-55-65 0-55 55-65 50 62Z" fill="#7c608f" /><ellipse cy="-2" rx="30" ry="36" fill="#edbd93" /><path d="m-31-5 4-32 21 5-17 22m28-22 21-5 5 32-14-5" fill="#e8e0cb" /><use href="#eyes" y="-4" /><path d="m-1 0-8 13H8m-18 10q10 7 21-3" class="smile" /><path d="m-21-13 12-5m18 0 12 5" class="smile" /><g transform="translate(37 40) rotate(20)" fill="none" stroke="#ffe19b" stroke-width="6"><circle cy="-9" r="10" /><path d="M0 2v28h11m-11-9h9" /></g></g></g>
+  <text x="90" y="179" text-anchor="middle" fill="#ffedbd" font-family="sans-serif" font-size="14" font-weight="bold" letter-spacing="1.5">YAGA</text>
 </svg>

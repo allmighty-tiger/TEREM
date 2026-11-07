@@ -1,6 +1,6 @@
-![TEREM operations chamber with eight agent emblems](.squad/assets/terem-operations-chamber.svg)
+![Eight fairy-tale companions around the warmly lit TEREM](.squad/assets/terem-operations-chamber.svg)
 
-# TEREM — White-Box Security Agent Team
+# TEREM — Fairy-Tale Characters. Real Security Work.
 
 **White-Box Security Agent Team** · Built on **Squad v0.0.0-source** · Sink-first static analysis.
 
