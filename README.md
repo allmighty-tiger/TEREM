@@ -18,16 +18,16 @@ Its mysterious fairy-tale identities are light presentation elements only. They 
 
 ### Eight-agent team
 
-| Agent | Responsibility |
-|---|---|
-| Vasilisa | Leads the assessment, enforces Phase 0, routes work, and assembles the final report. |
-| Volk | Reviews web application attack surfaces and overlooked paths. |
-| Yaga | Reviews authentication, authorization, sessions, and identity boundaries. |
-| Gorynych | Reviews infrastructure, cloud, containers, proxies, and CI/CD. |
-| Leshy | Maps the codebase, dependencies, and hidden connections. |
-| Koschei | Investigates root causes and connects triaged candidates across agents into multi-step attack chains, with source evidence for each hop. |
-| Mirror | Independently validates evidence through the Five-Gates workflow. |
-| Kot | Preserves decisions, coverage, handoffs, and session records. |
+| Avatar | Agent | Responsibility |
+|---|---|---|
+| ![Vasilisa](.squad/agents/vasilisa/avatar.svg) | Vasilisa | Leads the assessment, enforces Phase 0, routes work, and assembles the final report. |
+| ![Volk](.squad/agents/volk/avatar.svg) | Volk | Reviews web application attack surfaces and overlooked paths. |
+| ![Yaga](.squad/agents/yaga/avatar.svg) | Yaga | Reviews authentication, authorization, sessions, and identity boundaries. |
+| ![Gorynych](.squad/agents/gorynych/avatar.svg) | Gorynych | Reviews infrastructure, cloud, containers, proxies, and CI/CD. |
+| ![Leshy](.squad/agents/leshy/avatar.svg) | Leshy | Maps the codebase, dependencies, and hidden connections. |
+| ![Koschei](.squad/agents/koschei/avatar.svg) | Koschei | Investigates root causes and connects triaged candidates across agents into multi-step attack chains, with source evidence for each hop. |
+| ![Mirror](.squad/agents/mirror/avatar.svg) | Mirror | Independently validates evidence through the Five-Gates workflow. |
+| ![Kot](.squad/agents/kot/avatar.svg) | Kot | Preserves decisions, coverage, handoffs, and session records. |
 
 The normal handoff order is Phase 0 inventory, parallel discovery, Vasilisa triage, Koschei chain analysis, Mirror validation, final report assembly, and Kot documentation. Only evidence that passes validation is eligible for the final findings report.
 

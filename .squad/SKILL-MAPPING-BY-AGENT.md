@@ -8,7 +8,7 @@ Some local checklists are derived from [SnailSploit/offensive-checklist](https:/
 
 ---
 
-## 🔧 Volk — Web Application Pentester (25 Skills)
+## <img src="agents/volk/avatar.svg" alt="" width="32" height="34"> Volk — Web Application Pentester (25 Skills)
 
 **Core Skills:**
 1. `offensive-xss` — Cross-Site Scripting (stored, reflected, DOM, mutation)
@@ -41,7 +41,7 @@ Some local checklists are derived from [SnailSploit/offensive-checklist](https:/
 
 ---
 
-## 🔐 Yaga — Authentication & Identity Specialist (9 Skills)
+## <img src="agents/yaga/avatar.svg" alt="" width="32" height="34"> Yaga — Authentication & Identity Specialist (9 Skills)
 
 **Core Skills:**
 1. `offensive-jwt` — JWT Security (alg:none, key confusion, secret cracking)
@@ -56,7 +56,7 @@ Some local checklists are derived from [SnailSploit/offensive-checklist](https:/
 
 ---
 
-## 🔧 Gorynych — Infrastructure & Cloud Security Specialist (10 Skills)
+## <img src="agents/gorynych/avatar.svg" alt="" width="32" height="34"> Gorynych — Infrastructure & Cloud Security Specialist (10 Skills)
 
 **Core Skills:**
 1. `infrastructure-secret-detection` — Hardcoded credentials, API keys, JWT secrets, TLS keys in source
@@ -75,7 +75,7 @@ Some local checklists are derived from [SnailSploit/offensive-checklist](https:/
 
 ---
 
-## 🔍 Leshy — Codebase Reconnaissance Specialist (3 Skills)
+## <img src="agents/leshy/avatar.svg" alt="" width="32" height="34"> Leshy — Codebase Reconnaissance Specialist (3 Skills)
 
 **Core Skills:**
 1. `osint-recon-patterns` — Recon Patterns (codebase-focused recon: dependency analysis, leaked credentials, metadata extraction, internal service topology)
@@ -86,7 +86,7 @@ Some local checklists are derived from [SnailSploit/offensive-checklist](https:/
 
 ---
 
-## 🧬 Koschei — Vulnerability Research & Attack-Chain Analysis (5 Skills)
+## <img src="agents/koschei/avatar.svg" alt="" width="32" height="34"> Koschei — Vulnerability Research & Attack-Chain Analysis (5 Skills)
 
 **Core Skills:**
 1. `vulnerability-chaining` — Multi-Hop Attack Chains (cross-stack patterns, 3+ hop chains)
@@ -99,7 +99,7 @@ Some local checklists are derived from [SnailSploit/offensive-checklist](https:/
 
 ---
 
-## ✅ Mirror — Validator / Verifier (1 Skill)
+## <img src="agents/mirror/avatar.svg" alt="" width="32" height="34"> Mirror — Validator / Verifier (1 Skill)
 
 **Required local skills:**
 1. `five-gates-validation` — Five-Gates Framework (source verification, attack flow, severity calibration, false positive review, reproducibility)
@@ -115,7 +115,7 @@ Some local checklists are derived from [SnailSploit/offensive-checklist](https:/
 
 ---
 
-## 🏗️ Vasilisa — Pentest Lead & Orchestrator (2 Skills)
+## <img src="agents/vasilisa/avatar.svg" alt="" width="32" height="34"> Vasilisa — Pentest Lead & Orchestrator (2 Skills)
 
 **Required local skills:**
 1. `sink-inventory` — Phase 0 Output Sink Enumeration (routes, sinks, encoding, context matrix)
@@ -132,7 +132,7 @@ Some local checklists are derived from [SnailSploit/offensive-checklist](https:/
 
 ---
 
-## 📋 Kot — Session Memory & Documentation (2 Skills)
+## <img src="agents/kot/avatar.svg" alt="" width="32" height="34"> Kot — Session Memory & Documentation (2 Skills)
 
 **Required local skills:**
 1. `coverage-tracking` — Endpoint/sink/file/pattern coverage metrics and Coverage Report
