@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Mirror — Validator and Verifier</title>
+  <desc id="desc">An impartial silver mirror reflecting a five-point evidence mark.</desc>
+  <rect width="128" height="128" rx="18" fill="#101522"/>
+  <ellipse cx="64" cy="55" rx="35" ry="42" fill="#27364a" stroke="#c5d2e3" stroke-width="5"/>
+  <ellipse cx="64" cy="55" rx="26" ry="33" fill="#8ca6c0" opacity=".55"/>
+  <path d="M49 54 59 64 80 40" fill="none" stroke="#e8f2fa" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M55 96h18v8H55Z" fill="#c5d2e3"/><path d="M46 104h36" stroke="#c5d2e3" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#f1cd70"><circle cx="38" cy="22" r="3"/><circle cx="90" cy="28" r="3"/><circle cx="97" cy="63" r="3"/><circle cx="31" cy="69" r="3"/><circle cx="64" cy="14" r="3"/></g>
+  <text x="64" y="119" text-anchor="middle" fill="#e6eef6" font-family="sans-serif" font-size="12" letter-spacing="2">MIRROR</text>
+</svg>

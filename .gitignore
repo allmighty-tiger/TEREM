@@ -1,0 +1,57 @@
+# Squad: ignore runtime state (logs, inbox, sessions, agent memory, decisions)
+.squad/orchestration-log/
+.squad/log/
+.squad/decisions/inbox/
+.squad/decisions-archive.md
+.squad/sessions/
+.squad/agents/*/history.md
+.squad/agents/*/history-archive.md
+.squad/skills/
+.squad/skills-archive-binary/
+
+# Squad: SubSquad activation file (local to this machine)
+.squad-workstream
+
+# Codebase: user-specific source code (each user analyzes their own)
+codebase/*
+archive/
+# Pentest: runtime reports and findings (sensitive, session-specific)
+# reports/
+# report/
+pentest-reports-*/
+*.findings.md
+*.executive-summary.md
+
+# Pentest: temporary analysis artifacts
+*.candidate.md
+*.poc.md
+*.evidence/
+.pentest-cache/
+
+# OS and IDE files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.env
+.env.local
+/LOCAL_DEVELOPMENT_REPORT.md
+
+# Build/runtime caches (if any tools are added)
+node_modules/
+package-lock.json
+venv/
+__pycache__/
+*.pyc
+.cache/
+dist/
+build/
+
+# Large binary files or dumps
+*.pcap
+*.dump
+*.tar.gz
+*.zip
+.squad/identity/now.md

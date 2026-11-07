@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Kot — Session Memory and Documentation</title>
+  <desc id="desc">A learned cat watching over an open book of records.</desc>
+  <rect width="128" height="128" rx="18" fill="#101522"/>
+  <path d="M35 30 48 17 57 31h14l9-14 13 13-5 44H40Z" fill="#3c3344" stroke="#bda6c5" stroke-width="3"/>
+  <path d="M48 47h10M70 47h10" stroke="#f1d27e" stroke-width="5" stroke-linecap="round"/>
+  <path d="M60 59h8l-4 5Z" fill="#d9a3a3"/><path d="M52 67q12 8 24 0" fill="none" stroke="#bda6c5" stroke-width="3"/>
+  <path d="M22 79q21-9 42 6 21-15 42-6v28q-21-9-42 4-21-13-42-4Z" fill="#efe5c6" stroke="#b59555" stroke-width="3"/>
+  <path d="M64 85v25" stroke="#b59555" stroke-width="3"/>
+  <text x="64" y="122" text-anchor="middle" fill="#efe5c6" font-family="sans-serif" font-size="12" letter-spacing="2">KOT</text>
+</svg>

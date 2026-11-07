@@ -1,0 +1,55 @@
+policy_version: 1
+premium_escalation_flag: "escalate_to_premium"
+policy:
+  require_approval_for_premium: true
+  premium_models: ["claude-opus-4.6", "gpt-5.3-codex", "gpt-5.4"]
+NOTE: This file is commented out by design — model selection is handled by the host platform, not this config. Un-comment and activate if you need per-agent model overrides.
+
+agents:
+  vasilisa:
+    preferred: "claude-opus-4.6"
+    fallback: "claude-sonnet-4.6"
+    escalation:
+      - model: "gpt-5.4"
+        reason: "final report synthesis or large multi-doc merges"
+        require_approval: true
+  mirror:
+    preferred: "claude-opus-4.6"
+    fallback: "claude-sonnet-4.6"
+    escalation: []
+  volk:
+    preferred: "gpt-5.3-codex"
+    fallback: "claude-haiku-4.5"
+    escalation:
+      - model: "gpt-5.3-codex"
+        reason: "heavy PoC or exploit code generation"
+        require_approval: true
+  yaga:
+    preferred: "claude-opus-4.6"
+    fallback: "claude-sonnet-4.6"
+    escalation: []
+  koschei:
+    preferred: "claude-opus-4.6"
+    fallback: "claude-haiku-4.5"
+    escalation:
+      - model: "claude-opus-4.6"
+        reason: "cross-document chain synthesis when context > 30k tokens"
+        require_approval: true
+  gorynych:
+    preferred: "claude-opus-4.6"
+    fallback: "claude-haiku-4.5"
+    escalation:
+      - model: "claude-opus-4.6"
+        reason: "large infrastructure codebase review (Terraform modules, K8s clusters)"
+        require_approval: true
+  leshy:
+    preferred: "claude-haiku-4.5"
+    fallback: "claude-sonnet-4.6"
+    escalation:
+      - model: "claude-opus-4.6"
+        reason: "very large corpora ingestion (>100k tokens)"
+        require_approval: true
+  kot:
+    preferred: "claude-haiku-4.5"
+    fallback: null
+    escalation: []

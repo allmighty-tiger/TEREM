@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">Volk — Web Application Pentester</title>
+  <desc id="desc">A watchful geometric wolf following a hidden path.</desc>
+  <rect width="128" height="128" rx="18" fill="#101522"/>
+  <path d="M31 28 52 40 64 34 76 40 97 28 90 67 77 86 64 94 51 86 38 67Z" fill="#26354e" stroke="#8ea4c7" stroke-width="3"/>
+  <path d="M44 55 57 60 50 68ZM84 55 71 60 78 68Z" fill="#b9d7e8"/>
+  <path d="M57 75h14l-7 8Z" fill="#d7b96e"/>
+  <path d="M24 92c22-16 38 12 80-12" fill="none" stroke="#7ec8a3" stroke-width="4" stroke-dasharray="5 6"/>
+  <text x="64" y="117" text-anchor="middle" fill="#dce7f5" font-family="sans-serif" font-size="12" letter-spacing="2">VOLK</text>
+</svg>

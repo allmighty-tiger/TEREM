@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">TEREM operations chamber</title>
+  <desc id="desc">A mysterious professional security operations chamber with eight named agent emblems surrounding the TEREM lantern.</desc>
+  <defs>
+    <radialGradient id="glow"><stop stop-color="#d9bb6d" stop-opacity=".75"/><stop offset="1" stop-color="#121827" stop-opacity="0"/></radialGradient>
+    <linearGradient id="wall" x2="0" y2="1"><stop stop-color="#121827"/><stop offset="1" stop-color="#0a0f19"/></linearGradient>
+    <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000" flood-opacity=".45"/></filter>
+  </defs>
+  <rect width="1200" height="720" fill="url(#wall)"/>
+  <circle cx="600" cy="330" r="280" fill="url(#glow)"/>
+  <path d="M510 520V245l90-88 90 88v275Z" fill="#182238" stroke="#b89b55" stroke-width="5" filter="url(#shadow)"/>
+  <path d="M555 520V310h90v210" fill="#0d1422" stroke="#6f7f9b" stroke-width="4"/>
+  <path d="M545 245h110l-55-55Z" fill="#263653" stroke="#b89b55" stroke-width="4"/>
+  <rect x="570" y="275" width="60" height="82" rx="8" fill="#e2c873" stroke="#fff0b6" stroke-width="4"/>
+  <path d="M584 275h32l-7-20h-18Z" fill="#8e633d"/>
+  <text x="600" y="410" text-anchor="middle" fill="#f3e6b2" font-family="Georgia,serif" font-size="48" letter-spacing="9">TEREM</text>
+  <text x="600" y="448" text-anchor="middle" fill="#aebbd1" font-family="sans-serif" font-size="20" letter-spacing="3">WHITE-BOX SECURITY AGENT TEAM</text>
+  <g font-family="sans-serif" text-anchor="middle" filter="url(#shadow)">
+    <g transform="translate(80 90)"><rect width="250" height="110" rx="18" fill="#1a263d" stroke="#d4b663" stroke-width="3"/><path d="M52 24 60 48 84 56 60 64 52 88 44 64 20 56 44 48Z" fill="#d4b663"/><text x="165" y="48" fill="#f3e6b2" font-size="24">VASILISA</text><text x="165" y="76" fill="#aebbd1" font-size="14">LEAD &amp; ORCHESTRATOR</text></g>
+    <g transform="translate(870 90)"><rect width="250" height="110" rx="18" fill="#1a263d" stroke="#8ea4c7" stroke-width="3"/><path d="M20 28 39 40 52 35 65 40 84 28 77 67 52 87 27 67Z" fill="#8ea4c7"/><text x="165" y="48" fill="#e7eef9" font-size="24">VOLK</text><text x="165" y="76" fill="#aebbd1" font-size="14">WEB APPLICATION</text></g>
+    <g transform="translate(35 250)"><rect width="250" height="110" rx="18" fill="#241f34" stroke="#b998c6" stroke-width="3"/><path d="M23 86V48c0-22 13-32 29-32s29 10 29 32v38Z" fill="#b998c6"/><circle cx="52" cy="52" r="9" fill="#241f34"/><text x="165" y="48" fill="#eee4f2" font-size="24">YAGA</text><text x="165" y="76" fill="#bfb0c8" font-size="14">IDENTITY &amp; ACCESS</text></g>
+    <g transform="translate(915 250)"><rect width="250" height="110" rx="18" fill="#183224" stroke="#90d0a2" stroke-width="3"/><g fill="#90d0a2"><circle cx="31" cy="43" r="17"/><circle cx="52" cy="29" r="17"/><circle cx="73" cy="43" r="17"/></g><path d="M31 60 52 82 73 60" fill="none" stroke="#90d0a2" stroke-width="6"/><text x="165" y="48" fill="#def3e4" font-size="23">GORYNYCH</text><text x="165" y="76" fill="#a8c9b1" font-size="14">INFRASTRUCTURE &amp; CLOUD</text></g>
+    <g transform="translate(80 410)"><rect width="250" height="110" rx="18" fill="#183224" stroke="#8fc49a" stroke-width="3"/><path d="M52 90V48M52 59 29 38M52 65 77 39" stroke="#8fc49a" stroke-width="6"/><g fill="#8fc49a"><circle cx="52" cy="29" r="17"/><circle cx="26" cy="38" r="13"/><circle cx="80" cy="38" r="14"/></g><text x="165" y="48" fill="#e1f1e4" font-size="24">LESHY</text><text x="165" y="76" fill="#a8c9b1" font-size="14">CODEBASE RECON</text></g>
+    <g transform="translate(870 410)"><rect width="250" height="110" rx="18" fill="#211d38" stroke="#8f82c9" stroke-width="3"/><circle cx="47" cy="52" r="30" fill="none" stroke="#b7aee5" stroke-width="5"/><circle cx="47" cy="52" r="14" fill="none" stroke="#8f82c9" stroke-width="4"/><path d="M65 70 86 91M74 79l8-8" stroke="#d7b96e" stroke-width="6"/><text x="165" y="48" fill="#eeeaff" font-size="24">KOSCHEI</text><text x="165" y="76" fill="#b9b0df" font-size="14">ATTACK-CHAIN ANALYSIS</text></g>
+    <g transform="translate(185 570)"><rect width="250" height="110" rx="18" fill="#1b293b" stroke="#c5d2e3" stroke-width="3"/><ellipse cx="52" cy="48" rx="31" ry="36" fill="#7991aa" stroke="#d8e2ec" stroke-width="4"/><path d="M38 48 48 58 67 36" fill="none" stroke="#fff" stroke-width="6"/><text x="165" y="48" fill="#edf4fa" font-size="24">MIRROR</text><text x="165" y="76" fill="#b8c7d5" font-size="14">VALIDATOR / VERIFIER</text></g>
+    <g transform="translate(765 570)"><rect width="250" height="110" rx="18" fill="#30283a" stroke="#c0a9c8" stroke-width="3"/><path d="M22 30 36 17 45 31h14l9-14 14 13-5 44H27Z" fill="#c0a9c8"/><path d="M15 75q18-8 37 4 18-12 37-4v25q-19-8-37 3-19-11-37-3Z" fill="#efe5c6" stroke="#b59555" stroke-width="3"/><text x="165" y="48" fill="#f1e8f4" font-size="24">KOT</text><text x="165" y="76" fill="#c6b8cc" font-size="14">MEMORY &amp; DOCUMENTATION</text></g>
+  </g>
+</svg>
