@@ -32,18 +32,16 @@
 
 ## Discovery Methodology: Sink-First Approach
 
-### The Problem with Class-First Discovery
+### Coverage Tradeoff: Class-First Discovery
 
-**Old approach:** Assign agents by **vulnerability class**
-- "Let's look for XSS, then IDOR, then SQL injection..."
-- Agent focuses on ONE class across the entire app
-- Risk: Entire **sinks** (output destinations) go untested
-- Root cause: Auth/identity listed first → time anchors there → lower-priority sinks deprioritized
-- **Result:** Email rendering paths, PDF generation, logs all skipped → HTML injection missed
+**Class-first method:** Assign agents by **vulnerability class**.
+- An agent may focus on one class (for example, XSS, IDOR, or SQL injection) across the application.
+- Without a separate sink inventory, entire output channels such as email, PDF generation, and logs may receive insufficient coverage.
+- A sink-first inventory complements vulnerability-class expertise by making those coverage gaps explicit.
 
 ### The Sink-First Solution
 
-**New approach:** Assign agents by **output sink** (where data exits the app), then test ALL classes per sink
+**Sink-first method:** Assign agents by **output sink** (where data exits the app), then test ALL relevant classes per sink
 
 1. **Inventory Phase (Phase 0 — Pre-Discovery):**
    - Enumerate ALL output sinks: HTTP responses, Email HTML, Logs, PDFs, External APIs, Redirects, Caches, etc.
@@ -66,19 +64,15 @@
 | Aspect | Class-First | Sink-First |
 |--------|-------------|-----------|
 | **Coverage** | Vulnerability classes across the app | ALL sinks reviewed, each sink exhaustively tested |
-| **Prioritization bias** | Auth first → email deprioritized | All sinks equally weighted |
-| **Internal paths** | Assumed low-risk, skipped | Explicitly inventoried, same rigor as external |
+| **Prioritization bias** | Certain classes may dominate the review | All in-scope sinks inventoried before prioritization |
+| **Internal paths** | Risk of under-review without a separate inventory | Explicitly inventoried, same rigor as external |
 | **Multi-layer chains** | Hard to trace across files | Sink-first requires tracing all paths TO the sink |
 | **Encoding verification** | Input validation checked only | Both input validation AND output encoding verified |
-| **Blind spots** | Silent — entire sink types missed | Explicit gap visibility via matrix |
+| **Blind spots** | Possible unrecorded sink coverage gaps | Explicit gap visibility via matrix |
 
-### Real-World Impact
+### Hypothetical Coverage Example
 
-**The HTML Injection Miss:** Account notification emails sent to internal admin staff
-- **Input:** customerName parameter (Joi validates string type only)
-- **Output sink:** Email HTML body (no escapeHtml() applied)
-- **Class-first failure:** XSS agent hunted HTML injection in HTTP responses, not email templates
-- **Sink-first success:** Email HTML Agent would have found it immediately (escapeHtml() precedent exists elsewhere in the codebase)
+Consider an illustrative application that renders user-controlled text in both HTTP pages and email HTML. Reviewing only HTTP response paths could overlook output encoding at the email sink. A sink-first inventory explicitly includes both output channels and requires context-appropriate encoding checks for each. This is a methodology example, not a recorded finding.
 
 ## Pre-Discovery Checklist Addition
 
@@ -96,7 +90,7 @@ Add the following item to the Phase 0 standard checklist (before spawning discov
   - Expected output: Query Parameter Inventory (appended to Output Context Matrix)
 ```
 
-This ensures query parameters are systematically tested alongside body-param injection targets, preventing the coverage gap that allowed query-param injection vulnerabilities to be missed during automated discovery.
+This ensures query parameters are systematically tested alongside body parameters and reduces the risk of overlooking injection vectors that are exposed through query strings.
 
 ### Implementation
 
