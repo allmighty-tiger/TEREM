@@ -27,18 +27,16 @@
 
 ## Endpoint → Sink Mapping
 
+> **Blank working template.** All entries are placeholders, not findings, tested endpoints, or evidence from a previous engagement. Replace these rows with inventory data from the current authorized codebase.
+
 | Endpoint | HTTP Response (HTML) | HTTP Response (JSON) | HTTP Headers | Email HTML | Email Plain | Logs | PDFs | External APIs | Redirects | Browser Storage |
 |----------|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| POST /api/notifications | — | ✓ JSON.parse() | — | ✓ HTML template? **ENCODING?** | ✓ subject + body | ✓ audit log | — | Webhook | — | — |
-| GET /user/dashboard | ✓ EJS template + escapeHtml() | — | — | — | — | ✓ no PII | — | — | — | LocalStorage |
-| POST /auth/login | — | ✓ JSON.stringify() | ✓ Set-Cookie | — | — | ✓ audit log + **PASSWORD?** | — | — | ✓ /dashboard redirect | Session cookie |
-| DELETE /account | — | ✓ 204 No Content | — | ✓ Confirmation email | — | ✓ PII audit log | — | Webhook (delete event) | — | — |
-| GET /report/export | — | — | ✓ Content-Disposition | — | — | ✓ download log | ✓ User data in PDF | — | — | — |
-| GET /redirect?url= | — | — | ✓ **Location header?** | — | — | ✓ redirect log | — | — | ✓ **Open redirect?** | — |
+| {METHOD} {ROUTE} | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD | TBD |
 
 **Legend:**
+- TBD = not yet assessed; replace with verified evidence from the current codebase
 - ✓ = encoding verified / sanitization applied
-- ✗ = encoding MISSING / gap found
+- ✗ = encoding missing / gap found
 - ? = requires verification
 - — = not applicable
 
@@ -47,13 +45,10 @@
 ## Encoding Verification Summary
 
 | Endpoint | Source Data | Sink Type | Validation | Encoding | Status | Finding |
-|----------|-------------|-----------|-----------|----------|--------|---------|
-| POST /api/notifications | customerName (Joi.string()) | Email HTML | ✓ Input validated | ✗ **NO escapeHtml()** | GAP | HTML injection in email |
-| POST /api/notifications | customerName | Email Plain | ✓ Input validated | ✓ Plain-text, no encode needed | OK | — |
-| POST /api/notifications | message | HTTP JSON | ✓ Input validated | ✓ JSON.stringify() | OK | — |
-| GET /user/dashboard | userName | HTTP HTML | ✓ Input validated | ✓ escapeHtml() in template | OK | — |
-| POST /auth/login | email + password | Logs | ✓ Input validated | ✗ **PASSWORD IN LOGS** | GAP | PII leakage |
-| GET /redirect?url= | url param | HTTP Headers (Location) | ✗ **NO VALIDATION** | — | GAP | Open redirect |
+|----------|-------------|-----------|------------|----------|--------|---------|
+| {METHOD} {ROUTE} | {INPUT} | {SINK} | TBD | TBD | NOT ASSESSED | — |
+
+Only record a GAP or finding after source-backed analysis and the required validation gates.
 
 ---
 
@@ -115,5 +110,5 @@
 
 - This matrix is the **discovery gate.** No discovery work begins until Phase 0 is complete.
 - Agents are assigned to sink types, not vulnerability classes. This ensures comprehensive coverage per sink.
-- "Encoding" means output-level sanitization (escapeHtml, JSON.stringify, etc.), NOT input validation.
+- "Encoding" means context-appropriate output encoding or sanitization, NOT input validation.
 - Internal communication (email, logs, notifications) gets the same rigor as external surfaces.
