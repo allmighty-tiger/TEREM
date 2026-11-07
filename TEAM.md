@@ -25,9 +25,13 @@ Quick reference for the 8-member pentesting team. The fairy-tale motifs are pres
 
 ## Skills by Agent
 
-**Complete Coverage: 51 Active Skills (+ 18 Archived) Across 5 Discovery Agents**
+**Configured local skill set — 51 active skills and 18 archived skills**
 
 For the authoritative skill reference, see **[SKILL-MAPPING-BY-AGENT.md](./.squad/SKILL-MAPPING-BY-AGENT.md)**.
+
+The skill names below describe the expected local configuration. Checklist contents under `.squad/skills/` and `.squad/skills-archive-binary/` are excluded from this repository and must be supplied separately in the local workspace. Complete the [local checklist setup](README.md#local-checklist-files) before running the full workflow. Archived checklists are outside the active white-box workflow.
+
+Some local checklists are derived from [SnailSploit/offensive-checklist](https://github.com/SnailSploit/offensive-checklist). See [Third-Party Notices](THIRD_PARTY_NOTICES.md#snailsploitoffensive-checklist) for the source inventory and unresolved redistribution status. Source links provide attribution and do not themselves grant permission to copy, adapt, or redistribute checklist text.
 
 | Agent | Role | Core Skills | Total |
 |-------|------|-------------|-------|
@@ -40,7 +44,7 @@ For the authoritative skill reference, see **[SKILL-MAPPING-BY-AGENT.md](./.squa
 | **Vasilisa** | Pentest Lead & Orchestrator | `sink-inventory`, `discovery-spawn-completeness` | 2 |
 | **Kot** | Session Memory & Documentation | `coverage-tracking`, `project-conventions` | 2 |
 
-**Shared skills:** `offensive-fast-checking` is used by Volk, Yaga, Gorynych, Leshy, Koschei. `offensive-ai-security` is shared by Gorynych and Koschei. `offensive-supply-chain` is shared by Gorynych and Leshy. 18 binary/exploit and black-box OSINT skills are archived in `.squad/skills-archive-binary/` (available for future engagements outside white-box scope).
+**Shared skills:** `offensive-fast-checking` is used by Volk, Yaga, Gorynych, Leshy, Koschei. `offensive-ai-security` is shared by Gorynych and Koschei. `offensive-supply-chain` is shared by Gorynych and Leshy. The local configuration also references 18 archived binary/exploit and black-box OSINT skills under `.squad/skills-archive-binary/`; their contents must be supplied separately if needed for engagements outside white-box scope.
 
 ---
 
@@ -91,5 +95,5 @@ For the authoritative skill reference, see **[SKILL-MAPPING-BY-AGENT.md](./.squa
 
 ---
 
-**Status:** Fully deployed  
+**Setup requirement:** Supply the required local checklist files before running the full workflow.  
 **For:** Quick team reference — see [README.md](README.md) for project guide
