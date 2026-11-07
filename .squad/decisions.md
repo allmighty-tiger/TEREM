@@ -32,9 +32,9 @@ See .squad/routing.md for enforcement details.
 
 ---
 
-## Pentest Session Findings Template — Pattern & Methodology
+## Findings Consolidation — Reusable Format
 
-**⚠️ HISTORICAL CONTEXT:** This section documents a previous pentest session to demonstrate the decision-making pattern. Replace app-specific details (file paths, service names, domain context) with your own findings when using this template.
+**Template guidance:** The following structure is reusable across engagements. Populate it only with evidence collected from the currently authorized codebase; it does not describe a completed session.
 
 ### Template Structure for Findings Consolidation
 
@@ -96,20 +96,20 @@ Track: spawn time (wall clock), candidate count, confirmed count, accuracy ratin
 
 ---
 
-*See `reports/PENTEST_REPORT_FINAL.md` for a complete example (generated dynamically during pentest runs — will not exist until after a pentest completes).*
+*The completed report is generated in `reports/PENTEST_REPORT_FINAL.md` during a pentest run; this path is not a record of an earlier engagement.*
 
 ---
 
 ## NEEDS_MORE_INFO Resolution Policy (Standing Directive)
 
-**Problem:** Mirror returns NEEDS_MORE_INFO for findings where static analysis can't confirm runtime state. Vasilisa sends evidence requests to discovery agents that are no longer running, causing indefinite blocking.
+**Scenario:** Mirror may return NEEDS_MORE_INFO when static analysis cannot establish runtime-dependent facts. The coordinator must resolve outstanding evidence requirements without waiting for agents whose assigned phases are complete.
 
-**Policy — never wait for agent responses to evidence requests.** Discovery agents are not running in Phase 6. Instead, resolve NEEDS_MORE_INFO findings using this decision tree:
+**Policy — do not block on completed agent phases.** Resolve NEEDS_MORE_INFO findings using the available evidence and the following decision tree:
 
 1. **Evidence exists on disk** at referenced file:lines → resolve as **CONFIRMED** — the codebase is sufficient proof.
 2. **Finding depends on runtime configuration** (env vars, feature flags, external service state) → resolve as **CONFIRMED** with an `Observation` note in the report calling out the runtime dependency.
 3. **Finding requires external data** (DNS, public endpoint responses, OSINT, network topology) → resolve as **OBSERVATION** — static analysis can't derive this.
 4. **Finding references secrets/credentials** → verify with `grep` on disk. Found on disk → **CONFIRMED**. Only in git history → **OBSERVATION**.
 
-**Do not send evidence requests to agents that have already completed.** This prevents deadlocks.
+**Do not send evidence requests to agents that have already completed.** Record unresolved dependencies explicitly.
 
