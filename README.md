@@ -10,7 +10,7 @@ For quick team reference, see [TEAM.md](TEAM.md).
 
 ## What TEREM Provides
 
-TEREM is an eight-agent team for **static white-box security analysis**. It inventories output sinks first, traces data flows back to their sources, and applies relevant vulnerability classes to each sink. It does not execute a target, access an environment, or turn unverified observations into findings.
+TEREM is a specialized AI pentesting team that performs **static white-box security analysis**. It inventories output **sinks first**, traces data flows back to their sources, and applies relevant vulnerability classes to each sink. It does not execute a target, access an environment, or turn unverified observations into findings.
 
 TEREM's project-specific contribution is the security-team configuration layered on GitHub Squad: eight role-specific charters, sink-first routing and ceremonies, explicit producer/consumer handoffs, skill ownership, Five-Gates validation, report templates, structural validators, and session documentation rules. The underlying Squad framework and third-party checklist sources remain separately attributed.
 
@@ -85,7 +85,6 @@ cp -r /path/to/your/source/code/* codebase/
 ```
 terem/
 ├── .squad/              # Agent team infrastructure (committed)
-├── README.md            # This file
 ├── TEAM.md              # Team reference
 ├── codebase/            # YOUR SOURCE CODE (not committed, user-specific)
 │   ├── src/
@@ -97,9 +96,9 @@ terem/
 
 The `codebase/` folder is in `.gitignore` — each user brings their own source code to analyze.
 
-### Local checklist files
+### Local checklist files / skills
 
-TEREM's agent configurations reference security checklists stored in the local workspace. Checklist content under `.squad/skills/` and `.squad/skills-archive-binary/` is excluded from the publication snapshot and must be obtained separately from its original or authorized sources. Place each required `SKILL.md` at the path referenced by the agent configuration; both directories are ignored by Git so the local files remain outside the publication index.
+TEREM's agent configurations reference security checklists stored in the local workspace. Checklist content under `.squad/skills/` is excluded from the publication snapshot and must be obtained separately from its original or authorized sources. Place each required `SKILL.md` at the path referenced by the agent configuration; both directories are ignored by Git so the local files remain outside the publication index.
 
 The active workflow expects this structure:
 
@@ -121,7 +120,17 @@ Original source references for third-party-derived skills are listed in [THIRD_P
 
 ### 2. Install Squad
 
-TEREM requires a compatible [GitHub Squad](https://github.com/github/squad) host and the local `.squad/` configuration. Follow Squad's upstream installation documentation for the host you use. This repository does not pin a supported Squad CLI version or provide an automated bootstrap. The report-validation scripts also require Python 3, but no Python installer or pinned Python version is supplied here.
+TEREM requires a compatible [GitHub Squad](https://github.com/github/squad) host and the local TEREM `.squad/` configuration. 
+Install the Squad CLI and run Copilot in squad agent mode. Make sure you run these commands from TEREM directory in CLI:
+
+```bash
+cd TEREM
+npm install -g @bradygaster/squad-cli
+copilot --agent squad --yolo
+```
+
+Why --yolo? Squad makes many tool calls in a typical session. Without it, Copilot will prompt you to approve each one.
+
 
 ### 3. Kick Off a Pentest
 
