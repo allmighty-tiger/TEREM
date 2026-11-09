@@ -260,7 +260,7 @@ Pentest reports and findings are generated dynamically and stored in dated folde
 
 **Analyze a specific sink:**
 ```bash
-"Volk, find all vulnerabilities in the email notification sink (src/service/email-builder.js)"
+"Volk, find all vulnerabilities in the selected security-sensitive operation in <path-to-target-file>"
 ```
 
 **Deep-dive on auth:**
