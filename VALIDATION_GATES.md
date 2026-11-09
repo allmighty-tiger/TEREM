@@ -132,47 +132,6 @@ After all five gates, Mirror assigns ONE of three verdicts:
 
 ---
 
-## Example: How False Positives Get Caught
-
-### Real Case: HTML Injection in Email Template
-
-**Discovery Agent reports:**
-> "Found HTML injection vulnerability in email rendering. User input `customerName` is embedded in email template without escaping. CRITICAL."
-
-**Mirror's Five-Gates Review:**
-
-1. **Gate 1 (Source):** ✅ PASS
-   - File `/src/email/account-notification.js` line 18 found
-   - Code: `<p>Account notification for ${customerName}</p>`
-   - Endpoint `/api/notify-user` calls this template
-
-2. **Gate 2 (Attack Flow):** ✅ PASS
-   - Attacker provides malicious `customerName` parameter
-   - Parameter flows to template
-   - Email renders with HTML interpretation
-   - Flow is achievable
-
-3. **Gate 3 (Severity):** ⚠️ DOWNGRADE
-   - Email sent to INTERNAL staff (admin/ops), not public users
-   - Scope: internal HTML injection, not user-facing XSS
-   - Impact: less severe than public-facing XSS
-   - **Downgrade from CRITICAL → HIGH**
-
-4. **Gate 4 (False Positive):** ✅ PASS
-   - Check for framework mitigation: none (Node.js template literals)
-   - Check for upstream encoding: none detected
-   - NOT a false positive (real code pattern)
-
-5. **Gate 5 (Reproducibility):** ✅ PASS
-   - PoC is clear: send request with `customerName=<img src=x onerror=alert('XSS')>`
-   - Email renders with JavaScript execution
-   - User can verify by examining email template and input flow
-
-**Mirror's Verdict:** CONFIRMED
-> "Passes all gates. HTML injection in internal email template. **Severity: HIGH** (downgraded from CRITICAL due to internal-only scope). Root cause: Missing escapeHtml() in template. Developer fix: Apply escapeHtml(customerName) per precedent elsewhere in the codebase."
-
----
-
 ## Why This Approach Reduces False Positives
 
 | Common False Positive Type | Caught By | Example |
